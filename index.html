@@ -1,0 +1,22 @@
+<iframe frameborder="0"
+
+        scrolling="no"
+
+	id="chat-embed"
+
+        src=""
+
+        height="100%"
+
+        width="100%">
+
+</iframe>
+
+<script>
+  const queryString = window.location.search;
+
+  const urlParams = new URLSearchParams(queryString);
+
+  const channel_name = urlParams.get('channel_name')
+document.getElementById("chat-embed").src = "https://www.twitch.tv/embed/"+channel_name+"/chat?parent=sites.google.com&parent=gstatic.com&parent=www.gstatic.com&parent=" + document.domain
+</script>
